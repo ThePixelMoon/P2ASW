@@ -569,6 +569,10 @@ bool CWeaponPortalgun::Deploy( void )
 #endif
 	}
 
+	// Moon: according to my theory this may fix the crosshair issue
+	FirePortal1();
+	FirePortal2();
+
 	return bReturn;
 }
 
