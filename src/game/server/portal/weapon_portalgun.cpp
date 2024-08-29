@@ -31,7 +31,7 @@
 char *CWeaponPortalgun::s_szTogglePotatosThinkContext = "TogglePotatosThinkContext";
 char *CWeaponPortalgun::s_szGunEffectsThinkContext = "GunEffectsThinkContext";
 
-CON_COMMAND(give_portalgun, "Give a portalgun... Portal 2 script fix.")
+CON_COMMAND(give_portalgun, "Give the portalgun.")
 {
 	CPortal_Player *pPlayer = (CPortal_Player*)UTIL_GetCommandClient();
 	if (pPlayer)

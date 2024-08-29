@@ -56,7 +56,7 @@ extern ConVar sv_portal_placement_debug;
 #ifdef PORTAL2
 ConVar portal2_square_portals( "portal2_square_portals", "0", FCVAR_REPLICATED );
 ConVar portal2_portal_width( "portal2_portal_width", "72", FCVAR_REPLICATED );
-ConVar use_server_portal_particles( "use_server_portal_particles", 0, FCVAR_REPLICATED );
+ConVar use_server_portal_particles( "use_server_portal_particles", "0", FCVAR_REPLICATED );
 #endif
 
 

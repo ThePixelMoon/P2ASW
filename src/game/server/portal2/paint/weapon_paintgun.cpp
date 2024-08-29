@@ -23,14 +23,19 @@
 #include "particle_parse.h"
 #include "basetempentity.h"
 
-//#include "decals.h"
-
 // memdbgon must be the last include file in a .cpp file!!!
 #include "tier0/memdbgon.h"
 
 extern ConVar paintgun_blobs_per_second;
 //extern ConVar max_paint;
 //extern ConVar sv_limit_paint;
+
+CON_COMMAND(give_paintgun, "Give the paintgun.")
+{
+	CPortal_Player *pPlayer = (CPortal_Player*)UTIL_GetCommandClient();
+	if (pPlayer)
+		pPlayer->GivePlayerPaintGun(true, true);
+}
 
 char const *const PAINT_GUN_THINK_CONTEXT = "Paint Gun Think";
 
